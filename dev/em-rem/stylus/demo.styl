@@ -1,0 +1,90 @@
+//px 不会由于父级px样式影响子级样式
+//em 会根据父级样式进行等比缩放
+//rem 会根据父级中拥有px的根级样式进行等比缩放 如果没有则取html标签的px值，默认为16px
+
+header
+	position relative
+	width 16em
+	height 2em
+	background-color black
+	h1
+		text-align center
+		font-size 1em
+		line-height 2em
+		color white
+.main
+	background-color rgb(239,239,244)
+	width 16em
+	height 26.4em
+	.list
+		display inline-block
+		position relative
+		padding-left 2em
+		width 16em
+		line-height 2em
+		font-size 1rem
+		background-color white
+		border-bottom .5px solid rgb(217,217,217)
+		&:hover
+			background-color rgb(217,217,217)
+		&.item
+			margin-top 1em
+			border-top .5px solid rgb(217,217,217)
+		&:before
+			content ""
+			display block
+			position absolute
+			top .2em
+			left .2em
+			width 2em
+			height @width
+			background-repeat no-repeat
+		&:after
+			content ""
+			display block
+			position absolute
+			z-index 10
+			top 0
+			right .2em
+			width 2em
+			height @width
+			background-image url(../img/icon.png)
+			background-size 2em
+list-scale = 1 2 3 4 5 6 7
+for num in list-scale
+	.list:nth-of-type({num})
+		&:before
+			background-image url(../img/num.png)
+			background-size 1.5em
+footer
+	position absolute
+	bottom 0em
+	display flex
+	width 16em
+	background-color rgb(246,246,247)
+	padding .2em 0
+	div
+		flex-grow 1
+		text-align center
+		img 
+			display block
+			position relative
+			left 50%
+			transform translateX(-50%) 
+			width 2em
+			height @width
+		p
+			margin-top .2em
+			font-size .1em
+			color rgb(122,126,131)
+	
+	
+			
+	
+
+
+
+
+
+
+

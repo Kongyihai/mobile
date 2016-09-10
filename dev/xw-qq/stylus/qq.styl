@@ -1,0 +1,180 @@
+*
+	margin 0
+	padding 0
+header
+	width 16rem
+	height 2.2rem
+	background-image url(../img/headerbg.png)
+	background-size 7rem 2.2rem
+	background-position 6.9rem
+	background-repeat no-repeat
+	img
+		margin-top .35rem
+		margin-left .5rem
+		width 6rem
+		height 1.5rem
+	span
+		float right
+		margin .7rem
+		width 1rem
+		height 1.05rem
+		background-image url(../img/icon.png)
+		background-position -1rem
+		background-size cover
+.channel
+	ul
+		padding 0.25rem 0
+		width 16rem
+		height 5rem
+		color white
+		background-color rgb(73,152,231)
+		li
+			float left
+			list-style none
+			width 20%
+			a
+				display inline-block
+				width 100%
+				line-height 1.5rem
+				text-align center
+				font-size .8rem
+nav
+	width 16rem
+	height 2rem
+	color white
+	font-size 0.75rem
+	background-color rgb(62,134,206)
+	a
+		display inline-block
+		margin-top .25rem
+		width 3.2rem
+		line-height 1.5rem
+		text-align center
+		&:hover	
+			background-color rgb(35,111,187)
+.headlines
+	position relative
+	img
+		width 16rem
+		height 8.25rem
+	p
+		position absolute
+		left 1.95rem
+		bottom 0.45rem
+		color white
+		font-size .8rem
+.main
+	padding 0 .35rem
+	.aoyun
+		border .05rem solid rgb(205,222,240)
+		height 2.75rem
+		overflow hidden
+		font-size .7rem
+		.hd
+			padding 0 .3rem
+			line-height 1.25rem
+			font-weight bold
+			color rgb(0,106,206)
+			background-image url(../img/jpb_hd.png)
+			background-size cover
+			background-repeat no-repeat
+		.bd
+			table
+				tr
+					td
+						position: relative
+						line-height 1.5rem
+						text-align center
+						width 2.15rem
+						&.country
+							width 4.15rem
+						span
+							&.num
+								display inline-block
+								width .8rem
+								height @width
+								line-height @width
+								font-size .6rem
+								color white
+								border-radius .15rem
+								background-color rgb(255,131,39)
+						.icons
+							display inline-block
+							width .7rem
+							height .7rem
+							margin 0 .15rem -.1rem
+							background url(../img/rank_icons2.png)
+							background-size cover
+							&.icon-silver
+								background-position 3.36rem
+							&.icon-copper
+								background-position .7rem
+						&:after
+							content ""
+							position absolute
+							left -.05rem
+							top .4rem
+							width .05rem
+							height .75rem
+							background-color rgb(220,220,220)
+						
+	.list
+		position relative
+		padding 0.5rem 0
+		border-bottom 1px solid rgb(236,238,240)
+		img
+			position absolute
+			width 3.95rem
+			height 2.95rem
+			padding 0.05rem 0.2rem
+			background-color rgb(233,241,244)
+			border .05rem solid rgb(230,230,230)
+		h2
+			margin-left 4.3rem
+			margin-top .25rem
+			font-size 0.8rem
+			margin-bottom 0.25rem
+			overflow hidden
+			white-space nowrap
+			text-overflow ellipsis
+		p
+			margin-left 4.3rem
+			font-size .6rem
+			line-height 0.85rem
+			color rgb(135,140,146)
+	.more
+		margin-bottom 0.75rem
+		width 15.2rem
+		line-height 1.65rem
+		text-align center
+		background-color rgb(246,245,245)
+		border 0.05rem solid rgb(239,239,239)
+		span
+			font-size .8rem
+			line-height 1.65rem
+			color rgb(180,180,180)
+			&:after
+				display inline-block
+				content ""
+				margin-left .25rem
+				vertical-align -.25rem
+				width 1.05rem
+				height @width
+				background-image url(../img/icon.png)
+				background-position -2.1rem 0
+				background-size cover
+.footer
+	ul
+		padding .6rem 0
+		width 16rem
+		height 5.4rem
+		font-size .75rem
+		color rgb(149,160,172)
+		background-color rgb(73,83,93)
+		li
+			float left
+			list-style none
+			width 20%
+			line-height 1.4rem
+			text-align center
+			
